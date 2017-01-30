@@ -6,8 +6,14 @@ using System.Windows.Forms;
 
 namespace COMP1004_W2017_Lesson4
 {
-    static class Program
+    public static class Program
     {
+        // Declare public static form
+        public static SplashForm mySplashForm;
+
+        // Declare public static form
+        public static CalculatorForm myCalculatorForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +22,11 @@ namespace COMP1004_W2017_Lesson4
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CalculatorForm());
+
+            // Initialize SplashForm
+            Program.mySplashForm = new SplashForm();
+            Program.myCalculatorForm = new CalculatorForm();
+            Application.Run(Program.mySplashForm);
         }
     }
 }
