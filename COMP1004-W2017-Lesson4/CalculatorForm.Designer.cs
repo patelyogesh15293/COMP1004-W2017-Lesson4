@@ -314,7 +314,7 @@
             this.ResultTextBox.Location = new System.Drawing.Point(2, 99);
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.ReadOnly = true;
-            this.ResultTextBox.Size = new System.Drawing.Size(294, 45);
+            this.ResultTextBox.Size = new System.Drawing.Size(294, 37);
             this.ResultTextBox.TabIndex = 1;
             this.ResultTextBox.TabStop = false;
             this.ResultTextBox.Text = "0";
@@ -341,6 +341,7 @@
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculator";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CalculatorForm_FormClosing);
             this.CalculatorTableLayout.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoPictureBox)).EndInit();
             this.ResumeLayout(false);

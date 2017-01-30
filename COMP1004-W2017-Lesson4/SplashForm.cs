@@ -19,8 +19,14 @@ namespace COMP1004_W2017_Lesson4
 
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
-            this.Enabled = false;
+            // 1. Initialize the next form
+            CalculatorForm calculatorForm = new CalculatorForm();
+
+            // 2. create a refernace to the parentform
+            calculatorForm.parentForm = this;
+            this.SplashFormTimer.Enabled = false;
             this.Hide();
+            Program.myCalculatorForm.Show();
         }
     }
 }

@@ -25,6 +25,7 @@ namespace COMP1004_W2017_Lesson4
 
             // Initialize SplashForm
             Program.mySplashForm = new SplashForm();
+            //Initial CalculatorForm
             Program.myCalculatorForm = new CalculatorForm();
             Application.Run(Program.mySplashForm);
         }
